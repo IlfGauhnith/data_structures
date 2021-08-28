@@ -9,11 +9,12 @@ namespace data_structures_with_CSharp
         internal StackNode<T> next;
     }
 
-    internal class Stack<T>
+    public class Stack<T>
     {
         private StackNode<T> top;
-        internal int size {get; private set;}
-        internal Stack() {
+        private int size;
+
+        public Stack() {
             this.top = new StackNode<T>();
             this.top.previous = top;
             this.top.next = top;
@@ -21,7 +22,7 @@ namespace data_structures_with_CSharp
             this.size = 0;
         }
 
-        internal void push(T newItem) {
+        public void push(T newItem) {
             if (newItem is null) {
                 throw new ArgumentNullException($"Stack dont accept null data. {nameof(newItem)} is null");
             }
@@ -44,7 +45,7 @@ namespace data_structures_with_CSharp
             }
         }
 
-        internal T pop() {
+        public T pop() {
             if (this.size == 0) {
                 throw new InvalidOperationException("Stack is empty, you cannot pop it.");
             }

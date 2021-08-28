@@ -20,6 +20,9 @@ obj/
 !.vscode/extensions.json
 *.code-workspace
 
+# ignore test related class
+Program.cs
+
 # Local History for Visual Studio Code
 .history/
 
