@@ -1,4 +1,4 @@
 # data_structures
-Double linked list
-Hashmap
-Stack
+Double linked list  
+Hashmap  
+Stack  
